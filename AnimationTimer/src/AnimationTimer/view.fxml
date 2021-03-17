@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- TimelineAnimation.fxml -->
+<!-- FXML for a Circle that will be animated by the controller.  -->
+
+<?import javafx.scene.layout.Pane?>
+
+<Pane id="Pane" fx:id="displayPane" prefHeight="668.0" prefWidth="973.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AnimationTimer.Controller">
+    <children>
+        <!--        <Circle fx:id="c" fill="DODGERBLUE" layoutX="142.0" layoutY="143.0"-->
+        <!--                radius="40.0" stroke="BLACK" strokeType="INSIDE"-->
+        <!--                strokeWidth="5.0" />-->
+    </children>
+</Pane>
