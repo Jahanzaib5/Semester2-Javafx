@@ -1,4 +1,4 @@
-# Static Art with a canvas node
+# Animation timer of shapes
 ## Author: Jahanzaib Danish
 ##
 
