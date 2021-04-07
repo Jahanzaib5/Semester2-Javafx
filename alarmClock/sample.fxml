@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="400.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="alarmClock.Controller">
+    <children>
+        <Label fx:id="labelSeconds" alignment="CENTER" layoutX="267.0" layoutY="115.0" text="00" textAlignment="CENTER" textFill="#d0cbcb">
+            <font>
+                <Font name="System Bold" size="36.0" />
+            </font>
+            <effect>
+                <DropShadow color="#00000080" />
+            </effect>
+        </Label>
+        <Label alignment="CENTER" layoutX="245.0" layoutY="121.0" prefHeight="34.0" prefWidth="12.0" text=":" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="28.0" />
+            </font>
+            <effect>
+                <DropShadow color="#00000080" />
+            </effect>
+        </Label>
+        <Label fx:id="labelMinutes" alignment="CENTER" layoutX="192.0" layoutY="115.0" text="00" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="36.0" />
+            </font>
+            <effect>
+                <DropShadow color="#00000080" />
+            </effect>
+        </Label>
+        <Label alignment="CENTER" layoutX="168.0" layoutY="121.0" prefHeight="34.0" prefWidth="12.0" text=":" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="28.0" />
+            </font>
+            <effect>
+                <DropShadow color="#00000080" />
+            </effect>
+        </Label>
+        <Label fx:id="labelHours" alignment="CENTER" layoutX="112.0" layoutY="114.0" text="00" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="36.0" />
+            </font>
+            <effect>
+                <DropShadow color="#00000080" />
+            </effect>
+        </Label>
+
+
+
+        <Circle fx:id="buttonAddAlarm" fill="#bfb2ae" layoutX="210.0" layoutY="239.0" onMouseClicked="#actionAddAlarm" radius="36.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+            <effect>
+                <DropShadow color="#000000b2" offsetY="2.0" />
+            </effect>
+        </Circle>
+
+        <Rectangle fx:id="alarmRectangle" arcHeight="5.0" arcWidth="5.0" fill="#2e3348" height="76.0" layoutX="73.0" layoutY="349.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.35" visible="false" width="270.0">
+            <effect>
+                <DropShadow color="#00000080" />
+            </effect>
+        </Rectangle>
+        <ComboBox fx:id="comboHH" layoutX="97.0" layoutY="360.0" onAction="#actionPlayAlarm" prefHeight="40.0" prefWidth="101.0" promptText="HH" style="-fx-background-color: #ffffff;" visible="false">
+            <effect>
+                <DropShadow color="#00000080" />
+            </effect>
+        </ComboBox>
+        <ComboBox fx:id="comboMM" layoutX="213.0" layoutY="357.0" onAction="#actionPlayAlarm" prefHeight="40.0" prefWidth="101.0" promptText="ММ" style="-fx-background-color: #ffffff;" visible="false">
+            <effect>
+                <DropShadow color="#00000080" />
+            </effect>
+        </ComboBox>
+        <Label fx:id="labelInfo" alignment="CENTER" layoutX="69.0" layoutY="452.0" onMouseClicked="#actionTurnOffAlarm" prefHeight="76.0" prefWidth="270.0" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+      <Label layoutX="184.0" layoutY="222.0" text="Set Alarm" />
+    </children>
+</AnchorPane>
