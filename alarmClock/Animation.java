@@ -12,8 +12,6 @@ class Animation {
         transition.setFromY(0);
         transition.setToX(5);
         transition.setToY(5);
-        //transition.setCycleCount(6);
-        //transition.setAutoReverse(true);
         transition.playFromStart();
     }
 }

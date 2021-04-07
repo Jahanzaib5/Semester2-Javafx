@@ -89,8 +89,7 @@ public class Controller {
                 comboHH.setVisible(false);
                 alarmRectangle.setVisible(false);
                 Animation.animateNode(labelInfo);
-                //labelHours.setTextFill(Color.valueOf("#E4C146"));
-                //labelMinutes.setTextFill(Color.valueOf("#E4C146"));
+
             }
         }
     }
@@ -101,16 +100,13 @@ public class Controller {
         currentHour = Short.parseShort(strings[0]);
         currentMinute = Short.parseShort(strings[1]);
         short currentSeconds = Short.parseShort(strings[2]);
-        //imageHour.setRotate(currentHour * 30 + (currentMinute / 2.0));
-        //imageMinute.setRotate(currentMinute * 6 + currentSeconds / 10.0);
-        //imageSeconds.setRotate(currentSeconds * 6);
 
         labelHours.setText(currentHour < 10 ? "0" + String.valueOf(currentHour) : String.valueOf(currentHour));
         labelMinutes.setText(currentMinute < 10 ? "0" + String.valueOf(currentMinute) : String.valueOf(currentMinute));
         labelSeconds.setText(currentSeconds < 10 ? "0" + String.valueOf(currentSeconds) : String.valueOf(currentSeconds));
     }
 
-    public void actionAddAlarm() { // Метод срабатывает при нажатии на кнопку "+"
+    public void actionAddAlarm() {
         System.out.println("Add alarm");
         comboHH.setVisible(true);
         comboMM.setVisible(true);
@@ -120,7 +116,7 @@ public class Controller {
         alarmRectangle.setVisible(true);
     }
 
-    public void actionPlayAlarm() { // Метод срабатывает при взаимодействии с комбобоксами
+    public void actionPlayAlarm() {
         if (comboMM.getValue() != null && comboHH.getValue() != null) {
             if (comboMM.getValue().equals("none") || comboHH.getValue().equals("none")) {
                 labelInfo.setText("Alarm is turned Off!");
@@ -131,7 +127,7 @@ public class Controller {
             } else {
                 isTurnOff = false;
                 alarmMinute = Short.parseShort(comboMM.getValue());
-//                alarmMinutes = alarmMinutes>=59? alarmMinutes : alarmMinutes++;
+
                 alarmHour = Short.parseShort(comboHH.getValue());
                 comboHH.setVisible(true);
                 comboMM.setVisible(true);
@@ -142,13 +138,11 @@ public class Controller {
         }
     }
 
-    public void actionTurnOffAlarm() { // Метод для отключение будильника, срабатывает при нажатии на labelInfo
+    public void actionTurnOffAlarm() {
         if (!isTurnOff) {
             isTurnOff = true;
             comboHH.setValue("none");
             comboMM.setValue("none");
-            //labelHours.setTextFill(Color.valueOf("#FFFFFF"));
-            //labelMinutes.setTextFill(Color.valueOf("#FFFFFF"));
             labelInfo.setText("Alarm is turned off");
 
             System.out.println("alarm is turned off");

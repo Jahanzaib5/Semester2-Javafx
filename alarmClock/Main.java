@@ -10,9 +10,9 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        primaryStage.setTitle("");
+        primaryStage.setTitle("Alarm Clock");
         primaryStage.setScene(new Scene(root, 400, 600));
-        primaryStage.setOnCloseRequest(event -> System.exit(0));  //При закрытии окна, завершение работы всей программы
+        primaryStage.setOnCloseRequest(event -> System.exit(0));
         primaryStage.setResizable(false);
         primaryStage.show();
     }
