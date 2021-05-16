@@ -1,0 +1,16 @@
+model/Clouds.java
+ model.Clouds
+model/Weather.java
+ model.Weather
+WeatherApp.java
+ WeatherApp
+model/Main.java
+ model.Main
+model/Model.java
+ model.Model
+model/Wind.java
+ model.Wind
+model/Coord.java
+ model.Coord
+model/Sys.java
+ model.Sys

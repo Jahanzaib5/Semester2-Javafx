@@ -1,0 +1,37 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.8'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven {
+        url 'https://nexus.gluonhq.com/nexus/content/repositories/releases/'
+    }
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+    implementation "com.fasterxml.jackson.core:jackson-databind:2.9.8"
+    implementation "com.gluonhq:connect:2.0.1"
+    implementation "com.gluonhq:charm-cloudlink-client:6.0.1"
+    runtimeOnly 'org.glassfish:jakarta.json:1.1.5:module'
+    implementation "com.gluonhq.attach:storage:4.0.2:desktop"
+    runtimeOnly "com.gluonhq.attach:util:4.0.2"
+}
+
+test {
+    useJUnitPlatform()
+}
+
+javafx {
+    version = "13"
+    modules = [ 'javafx.controls', 'javafx.fxml', 'javafx.web']
+}
+
+mainClassName = 'WeatherApp'
