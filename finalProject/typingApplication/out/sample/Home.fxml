@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="390.0" prefWidth="826.0" style="-fx-background-color: #F0F0F0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.HomeController">
+   <children>
+      <Label alignment="CENTER" layoutX="47.0" layoutY="117.0" prefHeight="36.0" prefWidth="378.0" text="Welcome to the typing Application" textAlignment="CENTER">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="97.0" layoutY="180.0" prefHeight="25.0" prefWidth="305.0" text="This is a simple typing application which " textFill="#616161">
+         <font>
+            <Font name="Roboto Light" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="97.0" layoutY="208.0" prefHeight="25.0" prefWidth="305.0" text="is designed to improves one's typing skill." textFill="#616161">
+         <font>
+            <Font name="Roboto Light" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="97.0" layoutY="236.0" prefHeight="25.0" prefWidth="320.0" text="It contains a paragraph which needs to be" textFill="#616161">
+         <font>
+            <Font name="Roboto Light" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="97.0" layoutY="264.0" text="type in specific period of time!" textFill="#616161">
+         <font>
+            <Font name="Roboto Light" size="16.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="243.0" fitWidth="348.0" layoutX="453.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@type.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

@@ -1,0 +1,46 @@
+* {
+    -fx-primary: #110000;
+    -fx-secondary: #da0b04;
+    -fx-primarytext: black;
+}
+
+.text-area {
+    -fx-background-color: #b5b2b2;
+}
+.text-input {
+    -fx-highlight-fill: black;
+    -fx-highlight-text-fill: blue;
+}
+.text-input:focused {
+    -fx-highlight-fill: black;
+    -fx-highlight-text-fill: black;
+}
+
+.progress-bar {
+    -fx-accent: red;
+    -fx-background-color: transparent;
+}
+.progress-indicator {
+    -fx-progress-color: aqua;
+    -fx-text-fill: black;
+}
+.label {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+
+}
+
+.button{
+    -fx-text-fill: black;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-background-color: transparent;
+    -fx-border-color: black;
+}
+
+.button:hover{
+    -fx-border-color: #ffffff;
+    -fx-background-color: #ffffff;
+    -fx-text-fill: black;
+}

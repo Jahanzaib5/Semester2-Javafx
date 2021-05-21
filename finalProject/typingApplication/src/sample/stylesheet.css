@@ -1,0 +1,32 @@
+.sidepane{
+    -fx-background-color: #292728;
+}
+.contentPane{
+    -fx-background-color:  #F0F0F0;
+}
+.redPane{
+    -fx-background-color: #B20837;
+}
+
+.buttons{
+    -fx-background-color: transparent;    
+    -fx-background-radius: 0px;
+}
+.buttons:hover{
+    -fx-background-color: transparent;    
+    -fx-background-radius: 0px;
+    -fx-border-color: #B20837;
+    -fx-border-width: 0px 0px 0px 5px;
+    -fx-border-style: solid;
+}
+
+.roundLabel{
+    -fx-background-color: #B20837;
+    -fx-background-radius: 100%;    
+}
+.closeBtn{
+    -fx-background-color: transparent;
+}
+.closeBtn:hover{
+    -fx-background-color: #cccccc;
+}

@@ -1,0 +1,57 @@
+* {
+    -fx-primary: #110000;
+    -fx-secondary: #da0b04;
+    -fx-primarytext: #a19d9d;
+}
+
+
+.background {
+    -fx-background-color: linear-gradient(to bottom, #56CCF2, #2F80FF);
+}
+
+.button{
+    -fx-border-color: deepskyblue;
+    -fx-text-fill: black;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-background-color: transparent;
+}
+.button:hover{
+    -fx-border-color: deepskyblue;
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #2F80FF;
+}
+.button:pressed{
+    -fx-border-color: gray;
+    -fx-text-fill: #2F80FF;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-background-color: aqua;
+}
+
+.subpane{
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+}
+.LPbackground {
+    -fx-background-color: linear-gradient(to bottom, #56CCF2, #2F80FF);
+}
+.HomeButton, .HomeButton:hover{
+    -fx-text-fill: black;
+    -fx-background-color: #f1c40f;
+    -fx-border-color: #f1c40f;
+}
+.lessonButton, .lessonButton:hover{
+    -fx-text-fill: brown;
+    -fx-background-color: #f1c40f;
+    -fx-border-color: #f1c40f;
+}
+.goBack, .goBack:hover{
+    -fx-text-fill: white;
+    -fx-background-color: #2F80FF;
+    -fx-border-color: none;
+    -fx-font-weight: bold;
+}
+.testBlockHbox{
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-border-color: #a19d9d;
+}
